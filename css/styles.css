@@ -89,6 +89,13 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.col-md-4 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.my-3{
+  text-align: center;
+}
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -674,6 +681,7 @@ progress {
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+  justify-content: center;
 }
 .row > * {
   flex-shrink: 0;
@@ -7674,6 +7682,11 @@ textarea.form-control-lg {
 
 .text-center {
   text-align: center !important;
+  
+}
+.text-center p{
+  text-align: left;
+  
 }
 
 .text-decoration-none {
@@ -11414,7 +11427,8 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
+  background-size: cover; 
+  opacity: .8;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
@@ -11617,10 +11631,15 @@ header.masthead .masthead-heading {
 .timeline > li:last-child {
   margin-bottom: 0;
 }
+h4.amarillo{
+  color: #ffc800;
+  margin-top: 0;
+}
 .timeline .timeline-heading h4, .timeline .timeline-heading .h4 {
   margin-top: 0;
-  color: inherit;
+  
 }
+
 .timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
   text-transform: none;
 }
@@ -11720,9 +11739,13 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../assets/img/map-image.png");
+   /* background-image: url("../assets/img/map-image.png");*/
   background-repeat: no-repeat;
   background-position: center;
+  color: white;
+}
+section#contact h4 {
+ font-size: 15px;
 }
 section#contact .section-heading {
   color: #fff;
